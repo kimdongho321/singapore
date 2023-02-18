@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
-import Main from "./component/Main"
-import {FullPage,Slide} from "react-full-page"
+import Main from "./component/Main/Main";
+import Day1 from "./component/Day1/Day1";
+import {FullPage,Slide} from "react-full-page";
 import './App.css';
 
 function App() {
-
   return (
     <div className='app'>
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
@@ -16,7 +16,7 @@ function App() {
 
         <Slide>
           <div className="section-common section-area2">
-            2
+            <Day1 />
           </div>
         </Slide>
 
@@ -27,13 +27,13 @@ function App() {
         </Slide>
 
         <Slide>
-          <div className="section-common section-area3">
+          <div className="section-common section-area4">
             4
           </div>
         </Slide>
         
         <Slide>
-          <div className="section-common section-area3">
+          <div className="section-common section-area5">
             4
           </div>
         </Slide>
