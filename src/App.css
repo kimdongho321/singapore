@@ -1,3 +1,6 @@
+.app{
+  
+}
 .container{ 
   scroll-behavior: smooth;
   height: 100vh;
@@ -8,4 +11,29 @@
 .container::-webkit-scrollbar { width: 0; background: transparent;}
 .container > div {
   scroll-snap-align: start;
+}
+
+.slide-navigation{
+  display: flex;
+  position: fixed;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  top: 70%;
+  left: 15%;
+  justify-content: space-around;
+}
+
+.slide-navigation button{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: gray;
+  border:none;
+  border-radius: 50%;
+  
+}
+
+.slide-navigation button:nth-child(4n+1){
+ display: none;
 }

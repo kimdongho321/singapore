@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 
   return (
-    <div className='App'>
+    <div className='app'>
       <FullPage controls controlsProps={{ className: "slide-navigation" }}>
         <Slide>
           <div className="section-common section-area1">
