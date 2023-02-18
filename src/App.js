@@ -25,6 +25,18 @@ function App() {
             3
           </div>
         </Slide>
+
+        <Slide>
+          <div className="section-common section-area3">
+            4
+          </div>
+        </Slide>
+        
+        <Slide>
+          <div className="section-common section-area3">
+            4
+          </div>
+        </Slide>
       </FullPage>
     </div>
   );

@@ -22,18 +22,19 @@
   top: 70%;
   left: 15%;
   justify-content: space-around;
+  z-index: 10;
 }
 
 .slide-navigation button{
   width: 30px;
   height: 30px;
   color: #fff;
-  background-color: gray;
+  background-color: #ffffff;
   border:none;
   border-radius: 50%;
   
 }
 
-.slide-navigation button:nth-child(4n+1){
+.slide-navigation button:nth-child(6n+1){
  display: none;
 }
