@@ -1,20 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
 import React, {useEffect} from 'react';
-import {useHistory} from "react-router";
-import axios from "axios";
-import {BrowserRouter,Routes, Route,Link} from 'react-router-dom';
 import Main from "./component/Main"
+import {FullPage,Slide} from "react-full-page"
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-            <Route exact path = '/' element={<Main />}/>
 
-        </Routes>
-      </BrowserRouter>
+  return (
+    <div className='app'>
+      <FullPage controls controlsProps={{ className: "slide-navigation" }}>
+        <Slide>
+          <div className="section-common section-area1">
+            <Main />
+          </div>
+        </Slide>
+
+        <Slide>
+          <div className="section-common section-area2">
+            2
+          </div>
+        </Slide>
+
+        <Slide>
+          <div className="section-common section-area3">
+            3
+          </div>
+        </Slide>
+
+        <Slide>
+          <div className="section-common section-area3">
+            4
+          </div>
+        </Slide>
+        
+        <Slide>
+          <div className="section-common section-area3">
+            4
+          </div>
+        </Slide>
+      </FullPage>
     </div>
   );
 }

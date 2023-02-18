@@ -1,0 +1,50 @@
+.bg-img{
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+}
+
+.bg-gradation{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient( to bottom, #ffffff, #80AED8 ); */
+    background-color: #000000;
+    opacity: 0.5;
+    
+}
+
+.section-area1{
+    height: 100%;
+}
+
+.bg-img > img {
+    background-image: url("../asset/image/main-bg.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bg-border{
+    width: 90%;
+    height: 90%;
+    border: 5px #ffffff solid;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.bg-title{
+    background-image: url("../asset/image/main-title.png");
+    width: 550px;
+    height: 356px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 11;
+    top: 15%;
+    left: 35%;
+}
