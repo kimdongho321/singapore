@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Main from "./component/Main/Main";
 import Day1 from "./component/Day1/Day1";
 import {FullPage,Slide} from "react-full-page";
 import './App.css';
+import "./asset/font/font.css"
 
 function App() {
   return (
