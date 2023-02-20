@@ -13,7 +13,7 @@ export default function Travle(){
                     <img src={airport}/>
                 </div>
                 <img src={earth}/>
-                <img src={singapore}/>
+                <img src={singapore} className="singapore"/>
             </div>
         </div>
     )

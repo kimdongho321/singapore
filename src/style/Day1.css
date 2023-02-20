@@ -34,11 +34,19 @@
     width:150px;
     height: 100px;
     position: relative;
-    right: 100px;
-    top: 350px;
+    left: 90px;
+    top: 400px;
     animation: travle 1s; 
+    z-index: 10;
 }
 
+.singapore{
+    position: relative;
+    width:100px;
+    height: 100px;
+    right: 90px;
+    bottom: 150px;
+}
 
 /*airport 애니메이션*/
 @keyframes smooth1 {
