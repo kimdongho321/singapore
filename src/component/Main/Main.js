@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useRef} from "react";
 import "../../style/Main.css";
-import bgimg from "../../asset/image/main-bg.jpg";
-import maintitle from "../../asset/image/main-title.png";
+import bgimg from "../../asset/image/Main/main-bg.jpg";
 import AOS from "aos";
+
 
 export default function Main(){
     useEffect(() => {
