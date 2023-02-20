@@ -19,10 +19,11 @@
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  top: 70%;
+  top: 85%;
   left: 15%;
   justify-content: space-around;
-  z-index: 10;
+  z-index: 20;
+  counter-reset: number 0;
 }
 
 .slide-navigation button{
@@ -32,9 +33,26 @@
   background-color: #ffffff;
   border:none;
   border-radius: 50%;
-  
 }
 
+.slide-navigation button::after{
+  content: 'DAY' counter(number);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border:none;
+  border-radius: 50%;
+  counter-increment: number 1;
+  position: relative;
+  top: 120%;
+  right: 115%;
+  font-family: "indie";
+  font-size: 24px;
+}
+
+.slide-navigation button:hover{
+  cursor: pointer;
+}
 .slide-navigation button:nth-child(6n+1){
  display: none;
 }
