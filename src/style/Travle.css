@@ -1,0 +1,46 @@
+.travle-airport > img:hover{
+    cursor: pointer;
+    filter :brightness(0) invert(1);
+}
+
+.travle{
+    display: hidden;
+}
+
+.travle-airport > img {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: 1em;
+    top: 4em;
+    animation: travle 1.5s;
+    transition: 1s;
+    z-index: 10;
+}
+.earth-div{
+    width: 100%;
+    text-align: center;
+}
+
+.earth{
+    margin:0 auto;
+}
+
+.singapore {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 2em;
+    bottom: 3em;
+}
+
+/*애*/
+
+@keyframes travle {
+    from {
+      transform: translate(-1800px, 0);
+    }
+    to {
+        transform: translate(0);
+    }
+  }
