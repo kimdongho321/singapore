@@ -1,6 +1,13 @@
+.section-area2{
+ height: 100%;
+}
+
 .day1{
     text-align:center;
     font-size: 100px;
+    background-image: url("../asset/image/Day1/Day1-bg.jpg");
+    background-size: 100%;
+    height: 100%;
 }
 
 .airplane > img {
