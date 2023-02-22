@@ -10,10 +10,22 @@ import Album from "./Album.js";
 export default function Day1(){
     const [mode, setMode] = useState('wait');
     const [style, setStyle] = useState({display: 'block'})
+    const [scrollPosition, setScrollPosition] = useState(window.pageYOffset);
 
-    useEffect(() => { 
-        AOS.init(); 
-    }, []); 
+    useEffect(() => {
+        AOS.init();
+        const handleScroll = () => setScrollPosition(window.pageYOffset);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
+      
+    useEffect(() => {
+        if (scrollPosition === 0 || scrollPosition >= 1000) {
+        setMode('wait');
+        setStyle({ display: 'block' });
+        }
+    }, [scrollPosition, mode]);
 
     const pageload = () => {
         setMode("travle")
@@ -31,11 +43,11 @@ export default function Day1(){
     return(
         <>
             <div className="day1" >
-                <div className="airport-ani" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" style={style}>
-                    <div className="airplane" data-aos="zoom-in">
+                <div className="airport-ani" style={style}>
+                    <div className="airplane">
                         <img src={airplane}/>
                     </div>
-                    <div className="airport" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1500">
+                    <div className="airport">
                         <img src={airport} onClick={pageload} /> 
                     </div>
                 </div>  
