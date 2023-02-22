@@ -30,8 +30,8 @@ export default function Day1(){
 
     return(
         <>
-            <div className="day1" style={style}>
-                <div className="airport-ani" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+            <div className="day1" >
+                <div className="airport-ani" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" style={style}>
                     <div className="airplane" data-aos="zoom-in">
                         <img src={airplane}/>
                     </div>
@@ -39,8 +39,9 @@ export default function Day1(){
                         <img src={airport} onClick={pageload} /> 
                     </div>
                 </div>  
+                {conditionRender(mode)}
             </div>
-            {conditionRender(mode)}
+            
         </>
     )
 }

@@ -7,15 +7,14 @@
 }
 
 .travle-airport > img {
-    width:150px;
+    width: 150px;
     height: 100px;
     position: relative;
-    left: 65em;
-    top:25em;
-    animation: travle 1s; 
+    left: 1em;
+    top: 4em;
+    animation: travle 1s;
     z-index: 10;
 }
-
 .earth-div{
     width: 100%;
     text-align: center;
@@ -25,12 +24,12 @@
     margin:0 auto;
 }
 
-.singapore{
+.singapore {
     position: relative;
-    width:100px;
+    width: 100px;
     height: 100px;
-    left: 70em;
-    bottom: 18em;
+    left: 2em;
+    bottom: 3em;
 }
 
 /*애*/
