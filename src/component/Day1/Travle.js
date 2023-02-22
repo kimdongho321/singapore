@@ -22,7 +22,7 @@ export default function Travle(){
 
     return (
         <>
-            <div className="travle" style={style}>
+            <div className="travle" style={style} data-aos="zoom-in">
                 <div className="travle-ani">
                     <div className="travle-airport">
                         <img src={airport} onClick={pageload}/>

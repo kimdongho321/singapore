@@ -27,8 +27,13 @@
     animation-fill-mode: forwards;
 }
 
-.airport:hover{
+.airport > img:hover{
     cursor: pointer;
+    filter :brightness(0) invert(1);
+}
+
+.airport > img{
+  transition: 1s;
 }
 
 /* Travle.js */
