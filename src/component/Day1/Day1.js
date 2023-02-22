@@ -22,7 +22,7 @@ export default function Day1(){
 
     const conditionRender = (conditionMode) => {
         if (conditionMode === "travle") {
-            return <Travle setMode={setMode} />
+            return <Travle />
         } else if (conditionMode === "album") {
             return <Album />
         }
