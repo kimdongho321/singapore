@@ -1,0 +1,11 @@
+.stf__parent{
+    position:relative;
+    top: 1em;
+    left: 5em;
+}
+
+.demoPage1{
+    background: url("../asset/image/Day1/album/1.png") center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
